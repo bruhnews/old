@@ -2,29 +2,38 @@
 
 <main>
 
-  <h1>Unreact Template</h1>
+    <h1 class="header">BruhNews - The Strongest News</h1>
 
-  <p>
-    Learn more at <a href="https://crates.io/crates/unreact">Crates.io</a>
-  </p>
-
-  <p>
-    Secret message: <em> '{{secret}}' </em>
-  </p>
-
-  <div>
-    <h2> Other pages </h2>
-
-    <ul class="list">
-      <li><a href="{{>URL}}/hello/there"> Hello There </a></li>
-      <li><a href="{{>URL}}/not/a/real/path"> 404 Example </a></li>
-    </ul>
-  </div>
-
-  <br />
-
-  <img src="{{>URL}}/public/icon.png" alt="Unreact Icon" />
+    {{> list}}
 
 </main>
+
+<div class="modal-backdrop">
+    <div class="modal">
+        <h1>Notice</h1>
+        <p>
+            BruhNews uses cookies to improve your experience. By using our
+            website, you agree to cookies
+        </p>
+
+        <button class="big" onclick="hide()">Accept Cookies</button>
+        <br />
+        <button onclick="hide()">Disable All Cookies</button>
+    </div>
+</div>
+
+<!-- Pay no attention - this is not important! -->
+<section class="video">
+    <video loop id="video" preload="auto">
+        <source src="{{>URL}}/public/video.mp4" type="video/mp4" />
+    </video>
+    <script>
+        document.querySelector("#video").load();
+    </script>
+    <img src="{{>URL}}/public/image.png" id="image" />
+</section>
+
+
+<script src="{{>URL}}/public/script.js" type="text/javascript"></script>
 
 {{/boilerplate}}

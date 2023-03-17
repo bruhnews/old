@@ -1,13 +1,13 @@
-# Unreact Template
+# BruhNews
 
-A basic template for Unreact SSG apps in Rust.
+Very nice website 😁
 
-[Unreact on Crates.io](https://crates.io/crates/unreact)
+https://bruh.news
 
-[Live on GitHub Pages](https://darccyy.github.io/unreact-template)
+Now updated to version 3.0 !!! wow! 😁
 
-# Usage
+Tell all of your friends about this website, because it is very nice!
 
-uhh...
+Email concerns: [help@bruh.news](mailto:help@bruh.news?subject=Help!%20I%20have%20a%20problem!&body=...problem%20here...)
 
-![Unreact Icon](./public/icon.png)
+<img src="favicon.png" />

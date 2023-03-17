@@ -1,23 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <title> Unreact Template </title>
+    <title>BruhNews - The Strongest News</title>
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="Z4K-H95bEts5-JJ9GOuWUDSz5fhLKvlg4qu5_KhLez8" />
+    <meta name="keywords" content="bruhnews bruh.news bruh news strongest bruhnews.com www.bruhnews" />
 
-  {{!--
-  <link rel="shortcut icon" href="{{>URL}}/public/image/icon.png"> --}}
+    <meta name="url" content="https://bruh.news" />
+    <meta name="description" content="Subscribe to bruh.news for daily updates" />
+    <meta name="image" content="{{>URL}}/public/favicon.png" />
+    <meta property="image" content="{{>URL}}/public/favicon.png" />
+    <meta name="og:image" content="{{>URL}}/public/favicon.png" />
+    <meta property="og:image" content="{{>URL}}/public/favicon.png" />
+    <meta name="theme-color" content="#D80000" />
+    <meta name="author" content="darcy" />
 
-  {{!-- Global styles --}}
-  {{>STYLE name="global"}}
+    {{>STYLE name="global"}}
+
+    <link rel="shortcut icon" href="{{>URL}}/public/favicon.png" type="image/png" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8Y8DXGJ04S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-8Y8DXGJ04S");
+    </script>
 </head>
 
 <body>
+    {{> @partial-block}}
 
-  {{!-- Rest of document --}}
-  {{>@partial-block}}
+    <footer>
+        <a href="https://github.com/bruhnews/bruhnews.github.io#BruhNews=" target="_blank">
+            Repository
+        </a>
+        <a href="https://au.auctions.godaddy.com/trpItemListing.aspx?src=dpp&miid=398818584&itc=dpp_absol1" target="_blank">
+            Buy this domain
+        </a>
+    </footer>
 
 </body>
 
