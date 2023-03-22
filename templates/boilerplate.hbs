@@ -4,8 +4,7 @@
 <head>
     <title>BruhNews - The Strongest News</title>
 
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
-    <meta content="utf-8" http-equiv="encoding" />
+    {{>META}}
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google-site-verification" content="Z4K-H95bEts5-JJ9GOuWUDSz5fhLKvlg4qu5_KhLez8" />
     <meta name="keywords" content="bruhnews bruh.news bruh news strongest bruhnews.com www.bruhnews" />
@@ -19,9 +18,8 @@
     <meta name="theme-color" content="#D80000" />
     <meta name="author" content="darcy" />
 
-    {{>STYLE name="global"}}
-
-    <link rel="shortcut icon" href="{{>URL}}/public/favicon.png" type="image/png" />
+    {{>CSS name="global"}}
+    {{>ICON name="favicon.png"}}
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8Y8DXGJ04S"></script>
     <script>
@@ -38,14 +36,13 @@
     {{> @partial-block}}
 
     <footer>
-        <a href="https://github.com/bruhnews/bruhnews.github.io#BruhNews=" target="_blank">
+        <a href="{{REPO_URL}}" target="_blank">
             Repository
         </a>
-        <a href="https://au.auctions.godaddy.com/trpItemListing.aspx?src=dpp&miid=398818584&itc=dpp_absol1" target="_blank">
+        <a href="{{SALE_URL}}" target="_blank">
             Buy this domain
         </a>
     </footer>
-
 </body>
 
 </html>

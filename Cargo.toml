@@ -4,9 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+# unreact = "0.2.0-alpha6"
+unreact = { path = "../unreact" }
 serde = { version = "1.0.156", features = ["derive"] }
 serde_json = "1.0.87"
-unreact = "0.1.3"
-
-[dev-dependencies]
-just = "1.8.0"

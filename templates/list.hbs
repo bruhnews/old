@@ -1,15 +1,18 @@
 <ul class="list">
-    {{#each articles}}
+    {{#each GLOBAL.articles}}
 
     <li class="article">
         <a>
-            <img src="{{image}}" />
+            <img src="{{>URL}}/public/thumbs/{{@index}}.jpg" />
             <div class="text">
-                <wrap>
-                    <h1>{{headline}}</h1>
+                <div class="wrap">
+                    <h1 class="headline">{{headline}}</h1>
 
-                    <p>{{subtitle}}</p>
-                </wrap>
+                    <p>
+                        <span class="title">{{title}}: </span>
+                        <span class="description">{{description}}</span>
+                    </p>
+                </div class="wrap">
             </div>
         </a>
     </li>
