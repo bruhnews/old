@@ -10,4 +10,4 @@ Tell all of your friends about this website, because it is very nice!
 
 Email concerns: [help@bruh.news](mailto:help@bruh.news?subject=Help!%20I%20have%20a%20problem!&body=...problem%20here...)
 
-<img src="favicon.png" />
+<img src="./public/favicon.png" />
