@@ -1,4 +1,4 @@
-// setTimeout(show, 1000);
+setTimeout(show, 1000);
 var modalHidden = false,
   articleClicked = false; // Started
 
