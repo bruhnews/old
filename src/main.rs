@@ -81,14 +81,13 @@ fn main() -> Result<(), Error> {
             articles: json!(ARTICLES),
         })
         // Index page
-        .index("index", object! {})
+        .index("index", object! {})?
         // 404 page
-        .not_found("404", object! {})
+        .not_found("404", object! {})?
         // Help page
-        .route("help", "help", object! {});
-
-    // Complete app
-    app.run()?;
+        .route("help", "help", object! {})?
+        // Complete app
+        .run()?;
 
     Ok(())
 }

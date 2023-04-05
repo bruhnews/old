@@ -1315,6 +1315,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "stilo"
+version = "0.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1da0ff3c8708532c7b1189ed9fd4078d10fb9f0009c60e34ae096346977c6334"
+
+[[package]]
 name = "strsim"
 version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1541,11 +1547,10 @@ checksum = "c0edd1e5b14653f783770bce4a4dabb4a5108a5370a5f5d8cfe8710c361f6c8b"
 
 [[package]]
 name = "unreact"
-version = "0.2.0-alpha7"
+version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "40abde3f54793dd2882fcb280fd222bf0f93e14146b93f8bef24c2e035d57517"
+checksum = "a7e36af6e44c60297e96457c75332f8de399d556e116d2762158ae2ce40a28ee"
 dependencies = [
- "cfg-if",
  "chrono",
  "const-str",
  "css-minify",
@@ -1559,6 +1564,7 @@ dependencies = [
  "notify-debouncer-mini",
  "serde_json",
  "simple-websockets",
+ "stilo",
  "thiserror",
  "tokio",
 ]
