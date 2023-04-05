@@ -81,7 +81,7 @@ fn main() -> Result<(), Error> {
             articles: json!(ARTICLES),
         })
         // Index page
-        .index("index", object! {})?
+        .index("homepage", object! {})?
         // 404 page
         .not_found("404", object! {})?
         // Help page
