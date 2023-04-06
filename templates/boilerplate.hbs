@@ -5,18 +5,15 @@
     <title>BruhNews - The Strongest News</title>
 
     {{>META}}
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google-site-verification" content="Z4K-H95bEts5-JJ9GOuWUDSz5fhLKvlg4qu5_KhLez8" />
-    <meta name="keywords" content="bruhnews bruh.news bruh news strongest bruhnews.com www.bruhnews" />
+    {{!-- <meta name="keywords" content="bruhnews bruh.news bruh news strongest bruhnews.com www.bruhnews" /> --}}
 
-    <meta name="url" content="https://bruh.news" />
-    <meta name="description" content="Subscribe to bruh.news for daily updates" />
-    <meta name="image" content="{{>URL}}/public/favicon.png" />
-    <meta property="image" content="{{>URL}}/public/favicon.png" />
-    <meta name="og:image" content="{{>URL}}/public/favicon.png" />
-    <meta property="og:image" content="{{>URL}}/public/favicon.png" />
-    <meta name="theme-color" content="#D80000" />
-    <meta name="author" content="darcy" />
+    {{>META_EXTRA
+    description="Subscribe to bruh.news for daily updates"
+    image="public/favicon.png"
+    theme-color="#D80000"
+    author="darcy"
+    }}
 
     {{>CSS name="global"}}
     {{>ICON name="favicon.png"}}
@@ -36,10 +33,10 @@
     {{> @partial-block}}
 
     <footer>
-        <a href="{{REPO_URL}}" target="_blank">
+        <a href="{{GLOBAL.repo_url}}" target="_blank">
             Repository
         </a>
-        <a href="{{SALE_URL}}" target="_blank">
+        <a href="{{GLOBAL.sale_url}}" target="_blank">
             Buy this domain
         </a>
     </footer>

@@ -76,8 +76,8 @@ fn main() -> Result<(), Error> {
     app
         // Add global variables
         .globalize(object! {
-            REPO_URL: "https://github.com/bruhnews/bruhnews.github.io",
-            SALE_URL: "#", //TODO
+            repo_url: "https://github.com/bruhnews/bruhnews.github.io",
+            sale_url: "#", //TODO
             articles: json!(ARTICLES),
         })
         // Index page
