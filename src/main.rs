@@ -3,7 +3,7 @@ use serde_json::json;
 use unreact::prelude::*;
 
 // Where the site is hosted
-const URL: &str = "https://bruh.news";
+const URL: &str = "https://bruh.news/old";
 
 /// Convert tuple array to article array
 macro_rules! articles {
